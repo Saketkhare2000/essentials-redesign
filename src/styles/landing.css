@@ -15,17 +15,28 @@
 .hide {
   overflow: hidden;
 }
-.landing button {
+.landing .button {
   all: unset;
   font-weight: bold;
   font-size: 1.1rem;
   cursor: pointer;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   background: var(--purple);
   font-family: "Gilroy", sans-serif;
   color: white;
   transition: all 0.5s ease;
   margin-top: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing .button:hover .arrow {
+  transform: translateX(10px);
+}
+.landing .button .arrow {
+  margin-left: 1rem;
+  transition: all 0.2s ease-out;
 }
 @media screen and (max-width: 992px) {
   .landing {
@@ -44,7 +55,12 @@
     align-items: center;
     justify-content: center;
   }
-  .landing img {
+  .landing .button {
+    width: 100%;
+    padding: 1.5rem 0rem;
+  }
+  .landing .landingImg {
+    width: 60%;
     margin: 2rem;
   }
 }
