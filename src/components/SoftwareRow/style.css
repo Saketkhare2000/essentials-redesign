@@ -1,0 +1,10 @@
+.software-row {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,46 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  width: 350px;
+  margin: 12px;
+  background: #ffffff;
+  box-shadow: 0px 4px 11px rgba(210, 210, 210, 0.25);
+  border-radius: 4px;
+}
+
+.card .image {
+  margin-right: 24px;
+}
+.card .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card .details .software-name {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--black);
+}
+.card .details .software-desc {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--gray);
+}
+.card .details .download {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  color: #ffffff;
+  padding: 6px 16px;
+  background-color: var(--purple);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}

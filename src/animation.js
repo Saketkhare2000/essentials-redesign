@@ -45,8 +45,9 @@ export const pageAnimation = {
     opacity: 1,
     y: 0,
     transition: {
+      ease: "easeOut",
       duration: 1,
-      when: "beforeChildren",
+      when: "afterChildren",
       staggerChildren: 1,
     },
   },

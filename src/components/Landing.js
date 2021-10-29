@@ -4,6 +4,7 @@ import landingImg from "../images/landing.png";
 import arrow from "../images/Arrowsvg.svg";
 import "../styles/landing.css";
 import { fade, photoAnim, titleAnim } from "../animation";
+import { Link } from "react-router-dom";
 const Landing = () => {
   return (
     <>
@@ -30,15 +31,17 @@ const Landing = () => {
               </motion.h1>
             </motion.div>
           </div>
-          <motion.button
-            variants={fade}
-            initial="hidden"
-            animate="show"
-            className="button"
-          >
-            Check Them Out
-            <img className="arrow" src={arrow} alt="arrow" />
-          </motion.button>
+          <Link to="/softwares">
+            <motion.button
+              variants={fade}
+              initial="hidden"
+              animate="show"
+              className="button"
+            >
+              Check Them Out
+              <img className="arrow" src={arrow} alt="arrow" />
+            </motion.button>
+          </Link>
         </motion.div>
         <motion.img
           variants={photoAnim}

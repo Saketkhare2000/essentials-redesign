@@ -1,11 +1,8 @@
 import React from "react";
+import SignIn from "./SignIn";
 
 const Admin = () => {
-  return (
-    <div>
-      <h1>This is admin page</h1>
-    </div>
-  );
+  return <SignIn />;
 };
 
 export default Admin;
